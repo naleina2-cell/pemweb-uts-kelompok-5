@@ -1,0 +1,10 @@
+const express = require("expres");
+const router = express.Router ();
+const keluarController = index();
+router.get("/", keluarController.index);
+router.get("/)tambah", keluarController.formTambah);
+roter.post("/tambah", keluarController.tambah);
+roter.get("/:id/edit, keluarController.formEdit");
+router.post("/:id/edit", keluarController.update);
+router.post("/:id/hapus", keluarController.hapus);
+module.exports = router;   
